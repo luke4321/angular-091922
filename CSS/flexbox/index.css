@@ -10,9 +10,9 @@
     width: 50vw;
     /* flex-direction: column-reverse; */
     /* justify-content: flex-start; */
-    /* justify-content: center; */
+    justify-content: center;
     align-content: center;
-    /* align-item: flex-start; */
+    /* align-items: center; */
 }
 
 .item1 {
