@@ -52,8 +52,7 @@
     width: calc(100% / 12 * 1);
 }
 
-@media print (min-width: 600px) {
-    color: blue 
+@media (min-width: 600px) {
     .col-md-12 {
         width: calc(100%);
     }
