@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customdirectives.component.css']
 })
 export class CustomdirectivesComponent implements OnInit {
+  color = '';
 
   constructor() { }
 
