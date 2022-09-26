@@ -12,10 +12,11 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
   getUsers() {
-    return this.http.get([this.baseUrl].join('/')).pipe(
-      catchError((err) => {
-        return throwError(err);
-      })
-    );
+    return this.http.get([this.baseUrl].join('/'));
+    // .pipe(
+    //   catchError((err) => {
+    //     return throwError(err);
+    //   })
+    // );
   }
 }
