@@ -6,10 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { CustompipeComponent } from './custompipe/custompipe.component';
 import { MyPipePipe } from './custompipe/my-pipe.pipe';
-import { Pipe1Pipe } from './pipe1.pipe';
 
 @NgModule({
-  declarations: [AppComponent, MyPipePipe, CustompipeComponent, Pipe1Pipe],
+  declarations: [AppComponent, MyPipePipe, CustompipeComponent],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

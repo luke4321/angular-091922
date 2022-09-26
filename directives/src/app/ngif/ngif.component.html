@@ -1,0 +1,28 @@
+<div class="row">
+    Show <input type="checkbox" [(ngModel)]="showMe" />
+  </div>
+  
+  <h1>ngIf </h1>
+  
+  <p *ngIf="showMe">
+    ShowMe is checked
+  </p>
+  <p *ngIf="!showMe">
+    ShowMe is unchecked
+  </p>
+
+
+<h1>ngIf Else</h1>
+
+<p *ngIf="showMe; else elseBlock1">
+  ShowMe is checked
+</p>
+
+<ng-template #elseBlock1>
+  <p>ShowMe is unchecked Using elseBlock</p>
+</ng-template>
+
+
+<ng-container *ngIf="true">
+  <div *ngFor="let num of nums">1212122</div>
+</ng-container>

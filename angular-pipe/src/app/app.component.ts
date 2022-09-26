@@ -9,13 +9,14 @@ import { DataService } from './services/data.service';
 })
 export class AppComponent implements OnInit, OnDestroy {
   // title = 'angular-pipe';
-  // num = 5.4;
-  // obj = {
-  //   name: 'jojo',
-  //   age: 12,
-  //   company: 'jump',
-  //   sex: 'female'
-  // };
+  num = 5.4;
+  obj = {
+    1: 'number',
+    name: 'jojo',
+    age: 12,
+    company: 'jump',
+    sex: 'female'
+  };
 
   users: any;
   users$: any;

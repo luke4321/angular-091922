@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomDirective } from './customdirectives/custom.directive';
 import { CustomdirectivesComponent } from './customdirectives/customdirectives.component';
+import { NgforComponent } from './ngfor/ngfor.component';
+import { NgfortrackbyComponent } from './ngfortrackby/ngfortrackby.component';
+import { FormsModule } from '@angular/forms';
+import { NgifComponent } from './ngif/ngif.component';
 
 
 
@@ -12,11 +16,15 @@ import { CustomdirectivesComponent } from './customdirectives/customdirectives.c
   declarations: [
     AppComponent,
     CustomDirective,
-    CustomdirectivesComponent
+    CustomdirectivesComponent,
+    NgforComponent,
+    NgfortrackbyComponent,
+    NgifComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
