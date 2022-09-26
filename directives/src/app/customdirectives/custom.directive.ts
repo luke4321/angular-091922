@@ -25,7 +25,6 @@ export class CustomDirective implements OnInit {
     this.highlight('');
   }
 
-
   @HostBinding('style.border') border!: string;
   @HostBinding('style.backgroundColor') backgroundcolor!: string;
 
@@ -33,7 +32,7 @@ export class CustomDirective implements OnInit {
 
   ngOnInit(): void {
     this.border="5px solid blue";
-    this.backgroundcolor = "yellow";
+    this.backgroundcolor = "cyan";
   }
 
 
