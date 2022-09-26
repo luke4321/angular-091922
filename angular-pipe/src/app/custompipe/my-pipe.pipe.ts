@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'tempConverter',
 })
 export class MyPipePipe implements PipeTransform {
-  transform(value: string | undefined, unit: string) {
+  transform(value: string , unit: string) {
     if (value && !isNaN(+value)) {
       if (unit === 'C') {
         const temperature = (+value - 32) / 1.8;
