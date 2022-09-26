@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CustomDirective } from './customdirectives/custom.directive';
 import { CustomdirectivesComponent } from './customdirectives/customdirectives.component';
-import { CustomDirective } from './customdirective/custom.directive';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomdirectivesComponent,
-    CustomDirective
+    CustomDirective,
+    CustomdirectivesComponent
   ],
   imports: [
     BrowserModule,
