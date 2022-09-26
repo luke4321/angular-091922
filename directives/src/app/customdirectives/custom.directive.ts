@@ -26,24 +26,19 @@ export class CustomDirective implements OnInit {
   }
 
 
-  // @HostBinding('style') customstyle: any;
-  // stylelist = ['color: red', 'color: green', 'color: orange'];
-  // index = 0;
+  @HostBinding('style.border') border!: string;
+  @HostBinding('style.backgroundColor') backgroundcolor!: string;
 
-  constructor(private el: ElementRef) {}
+  constructor(private ele: ElementRef) {}
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.border="5px solid blue";
+    this.backgroundcolor = "yellow";
   }
 
-  // ngOnInit(): void {
-  //   setInterval(() => {
-  //     this.customstyle = this.stylelist[this.index++];
-  //     this.index = this.index > 2 ? 0 : this.index;
-  //   }, 500);
-  // }
 
   highlight(color: string): void {
-    this.el.nativeElement.style.backgroundColor = color;
+    this.ele.nativeElement.style.backgroundColor = color;
   }
  
 }

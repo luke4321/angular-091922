@@ -1,19 +1,16 @@
 <h2>Pick a highlight color</h2>
 <div>
-  <input type="radio" name="colors" (click)="color = 'lightgreen'" />Green
-  <input type="radio" name="colors" (click)="color = 'yellow'" />Yellow
-  <input type="radio" name="colors" (click)="color = 'cyan'" />Cyan
+  <input type="radio" name="colors" (click)="color1 = 'lightgreen'" />Green
+  <input type="radio" name="colors" (click)="color1 = 'yellow'" />Yellow
 </div>
 
-<hr />
 
-<p colorDirective [color]="color">Highlight me!</p>
+<p colorDirective [color]="color1">Highlight me!</p>
 
-<p colorDirective [color]="color" defaultColor="grey">Highlight me too!</p>
+<p colorDirective [color]="color1" defaultColor="grey">Highlight me too!</p>
 
-<hr />
 
-<input type="text" colorDirective [color]="color" />
+
 
 <!-- <h1 colorDirective>change the color</h1> -->
 
