@@ -21,7 +21,7 @@ export class AppComponent implements OnInit, OnDestroy {
   // users: any;
   users$: any;
 
-  // subscription!: Subscription;
+  subscription!: Subscription;
 
   // showString = true;
   // pipeString =
@@ -37,9 +37,9 @@ export class AppComponent implements OnInit, OnDestroy {
     // err => {});
     this.users$ = this.dataService.getUsers();
   }
-  // ngOnDestroy(): void {
-  //   this.subscription.unsubscribe();
-  // }
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
 
   removeSort() {
     return 0;
