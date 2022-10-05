@@ -39,8 +39,7 @@ export class NgforComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 
 }
