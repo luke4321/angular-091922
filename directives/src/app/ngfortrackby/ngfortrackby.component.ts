@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ngfortrackby.component.css'],
 })
 export class NgfortrackbyComponent implements OnInit {
-  title: string = 'Top 5 Movies';
+
 
   movies: Movie[] = [];
 
